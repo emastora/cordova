@@ -1,0 +1,304 @@
+.align-left {
+    float: left
+}
+
+.align-right {
+    float: right
+}
+
+
+/* #profile,
+#logout,
+#feed {
+    display: none
+} */
+
+#map {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+#journey_map {
+    padding: 0;
+    margin: 10px;
+    height: 40%;
+}
+
+#matching_journey_map {
+    padding: 0;
+    margin: 0;
+    height: 40%;
+}
+
+#button {
+    position: absolute;
+    bottom: 0;
+}
+
+.to-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #E6E6E6;
+    border 1px solid white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
+}
+
+.to-image-chat {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #E6E6E6;
+    border 1px solid white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px 0px;
+    margin: 5px;
+}
+
+.chat-name {
+    line-height: 120%;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.chat-text {
+    font-size: 14px;
+    padding: 5px;
+    word-wrap: break-word;
+    line-height: 100%;
+    color: #008AE6;
+}
+
+.chat-time {
+    font-size: 10px;
+    opacity: 0.4;
+    padding: 5px;
+    word-wrap: break-word;
+    line-height: 100%;
+}
+
+.to-wrapper {
+    line-height: 1;
+    height: 100pt;
+    padding: 10pt;
+    background-color: #33393c;
+    text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 0px;
+    color: white;
+}
+
+.to-name {
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.to-email {
+    font-size: 14px;
+    opacity: 0.5;
+    word-wrap: break-word;
+}
+
+.rating-num {
+    height: 24px;
+    color: white;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 4px 4px 0 0;
+    padding: 0 6px;
+    background-color: #eb482f;
+    color: white;
+    width: auto;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.rating-num ons-icon {
+    font-size: 11px;
+    vertical-align: -0px;
+}
+
+.text-input {
+    margin-top: 4px;
+}
+
+.textarea {
+    margin-top: 4px;
+}
+
+.journeys_list {
+    border-top: none;
+    background-image: none !important;
+}
+
+.journey {
+    line-height: 1;
+    padding: 0;
+}
+
+.journey-left {
+    text-align: right;
+    padding: 10px 10px 10px 0;
+}
+
+.journey-center {
+    background-color: #3399ff;
+    opacity: 0.5;
+}
+
+.journey-right {
+    padding: 10px 40px 10px 10px;
+}
+
+.journey-date {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.journey-time_left {
+    font-size: 11px;
+    margin-bottom: 4px;
+    opacity: 0.4;
+}
+
+.journey-seats {
+    font-size: 11px;
+    margin-bottom: 4px;
+    opacity: 0.4;
+}
+
+.journey-name {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.journey-info {
+    opacity: 0.4;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.person-list {
+    border-top: none;
+}
+
+.person {
+    line-height: 1;
+}
+
+.person-list-header {
+    opacity: 0.6;
+}
+
+.person-name {
+    line-height: 44px;
+}
+
+.person-image {
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.vehicles_list {
+    line-height: 1;
+    padding: 15px 0px 15px 15px;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.brand {
+    font-weight: 500;
+    line-height: 16px;
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.lisence_plate {
+    font-size: 14px;
+    opacity: 0.4;
+    margin-bottom: 6px;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.login-form {
+    text-align: center;
+    width: 80%;
+    margin: 60px auto 0;
+}
+
+input[type=email],
+input[type=password] {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    outline: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.login-button {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.forgot-password {
+    display: block;
+    margin: 8px auto 0 auto;
+    font-size: 14px;
+}
+
+.loginGoogle {
+    background-color: red;
+}
+
+.loginFB {}
+
+.loginButton {
+    background-color: green;
+}
+
+.list-item-note {
+    position: absolute;
+    right: 36px;
+    top: 0px;
+    font-size: 14px;
+}
+
+.list-item-note>.notification {
+    margin-top: 12px;
+}
+
+.fa-check {
+    color: green;
+}
+
+.fa-home {
+    color: blue;
+}
+
+.fa-crosshairs {
+    color: red;
+}

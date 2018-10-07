@@ -1,0 +1,23 @@
+<ons-page id="message" >
+    <button type="button" id = "scrollDown" onclick="location.href='#chatBtn';"  style="display: none;"></button>
+    <ons-toolbar>
+        <div class="left">
+            <ons-back-button>Back</ons-back-button>
+        </div>
+        <div class="center">Conversation</div>
+    </ons-toolbar>
+    
+    <ons-list id="messages" modifier="inset" style="margin-top: 10px; margin-bottom: 10px;">    
+        <ons-list-header class="person-list-header">Conversation</ons-list-header>
+    </ons-list>
+
+    <ons-list id="chatBtn" modifier="inset" style="margin-top: 10px; margin-bottom: 10px;">
+        <ons-list-header class="person-list-header">New message</ons-list-header>
+        
+        <ons-list-item class="person" >
+            <input type="text" id="messageInput" placeholder="Type your message here" class="text-input text-input--transparent" style="margin:10px;">
+            <ons-button class="anchor" style="float: right;" id="send" onClick="onSendMesage();">Send</ons-button>
+        </ons-list-item>
+    </ons-list>
+
+</ons-page>

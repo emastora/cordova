@@ -1,0 +1,78 @@
+<ons-page id="others_vehicle_inf">
+
+    <ons-toolbar>
+        <div class="left">
+            <ons-back-button>Back</ons-back-button>
+        </div>
+        
+        <div class="center">Vehicle Information</div>
+    </ons-toolbar>
+
+    <ons-list modifier="inset" style="margin-top: 10px; margin-bottom: 10px">
+    
+        <ons-list-item class="to-wrapper">
+            <ons-row>
+                <ons-col width="90pt">
+                    <img class="to-image" id="vehicle_picture">
+                </ons-col>
+                <ons-col>
+                    <div class="to-email" id="vehicle_email"></div>
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+        
+        <ons-list-item>
+            <div class="align-left">Brand:</div>
+            <div class="align-right" id="brand"></div>
+        </ons-list-item>
+        
+        <ons-list-item>
+            <div class="align-left">Model:</div>
+            <div class="align-right" id="model"></div>
+        </ons-list-item>
+        
+        <ons-list-item>
+            <div class="align-left">Seats:</div>
+            <div class="align-right" id="seats"></div>
+        </ons-list-item>
+        
+        <ons-list-item>
+            <div class="align-left">Color:</div>
+            <div class="align-right" id="color"></div>
+        </ons-list-item>
+
+        <ons-list-item>
+            <div class="align-left">License Plate:</div>
+            <div class="align-right" id="licencePlate"></div>
+        </ons-list-item>
+
+        <ons-list-item>
+            <div class="align-left">Year:</div>
+            <div class="align-right" id="year"></div>
+        </ons-list-item>
+        
+        <ons-list-item>
+            <div class="align-left">CC:</div>
+            <div class="align-right" id="cc"></div>
+        </ons-list-item>
+                    
+        <ons-list-item>
+            <div class="align-left">Air Condition:</div>
+            <div class="align-right" id="aircondition"></div>
+        </ons-list-item>
+        
+        <ons-list-item>
+            <div class="align-left">Pets Allowed:</div>
+            <div class="align-right" id="petsAllowed"></div>
+        </ons-list-item>
+    
+    </ons-list>
+    
+    <input type="hidden" id="vechicle_oid" value="aaaaaaaaaaaaaaaaaaaaaaaa" />
+    <!--<div style="padding: 10px 9px">
+        <ons-button modifier="large" style="margin: 0 auto;" onclick="app.slidingMenu.setMainPage('edit_vehicle.html', {closeMenu: true})">
+            Edit Vehicle Info
+        </ons-button>
+    </div>-->
+    
+</ons-page>

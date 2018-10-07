@@ -1,0 +1,18 @@
+<ons-dialog id="navigator.html" style="height: 220px;" var="naviDialog" cancelable>
+    <ons-navigator var="myNav">
+        <ons-toolbar inline>
+            <div class="center">
+              Navigator
+            </div>
+        </ons-toolbar>
+    
+        <div style="text-align: center">
+            Please insert date <br /> <input type='date' id='scheduleD' required><br />And time<br><input type='time' id='scheduleT' required>
+        
+            <p>
+                <ons-button onclick="naviDialog.hide()">Close</ons-button>
+                <ons-button onclick="myNav.pushPage('next.html')">Next</ons-button>
+            </p>
+        </div>
+    </ons-navigator>
+</ons-dialog>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <% include partials/head %>
+
+        <title>Map View</title>
+</head>
+
+<body>
+    <ons-navigator var="myNavigator">
+        <ons-page id="main_map">
+
+            <ons-toolbar fixed-style>
+                <div class="left">
+                    <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()">
+                        <ons-icon icon="bars"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+
+                <div class="center">Main Map</div>
+
+                <div class="right" id="getPosition">
+                    <ons-toolbar-button onClick="getCurrentPosition()">
+                        <ons-icon icon="fa fa-hand-o-down fa-lg"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+
+            </ons-toolbar>
+
+            <ons-modal var="modal">
+                <ons-icon icon="ion-load-c" spin="true"></ons-icon>
+                <br><br> Retrieving your location.<br>Please wait...
+            </ons-modal>
+
+            <div id="map"></div>
+            <ons-button id="button" modifier="large" onclick="createJourney();">Submit Journey</ons-button>
+
+        </ons-page>
+    </ons-navigator>
+
+
+
+
+</body>
+
+</html>

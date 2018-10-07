@@ -1,0 +1,116 @@
+<ons-page style="background-color: white">
+
+    <ons-list>
+
+        <ons-list-item>
+            <b style="color: #5198db">&nbsp; Main</b>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable" class="list__item__line-height" onclick="app.slidingMenu.setMainPage('main_map.html', {closeMenu: true})">
+            &nbsp;<i class="fa fa-map-marker fa-lg" style="color: #666"></i> &nbsp; Map
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable" class="list__item__line-height" onclick="app.slidingMenu.setMainPage('my_journeys.html', {closeMenu: true})">
+            <i class="fa fa-road fa-lg" style="color: #666"></i> &nbsp; My Journeys
+
+            <span class="list-item-note">
+                    <span class="notification" id="journeyNotification"></span>
+            </span>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable" class="list__item__line-height" onclick="app.slidingMenu.setMainPage('ratings.html', {closeMenu: true})">
+            <i class="fa fa-users fa-lg" style="color: #666"></i> &nbsp; My Ratings
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable" class="list__item__line-height" onclick="app.slidingMenu.setMainPage('my_vehicles.html', {closeMenu: true})">
+            <i class="fa fa-car fa-lg" style="color: #666"></i> &nbsp; My Vehicles
+        </ons-list-item>
+
+        <ons-list-item>
+            <b style="color: #5198db">&nbsp; User Profile</b>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable" class="list__item__line-height" onclick="app.slidingMenu.setMainPage('personal_inf.html', {closeMenu: true})">
+            &nbsp;<i class="fa fa-user fa-lg" style="color: #666"></i> &nbsp; Personal Information
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable" class="list__item__line-height" onclick="comingSoon()">
+            <i class="fa fa-comments-o fa-lg" style="color: #666"></i> &nbsp; Comments
+        </ons-list-item>
+
+        <ons-list-item>
+            <b style="color: #5198db">&nbsp; Social</b>
+        </ons-list-item>
+
+        <ons-list-item>
+            <fb:login-button id="fb-btn" scope="public_profile,email,user_friends" onlogin="checkLoginState();">
+            </fb:login-button>
+        </ons-list-item>
+
+
+        <style media="screen">
+            #fb-btn {
+                margin-bottom: 20px;
+                align-self: center;
+            }
+        </style>
+
+        <ons-list-item modifier="tappable" id="logoutFB" class="list__item__line-height" onclick="logoutFB()">
+            <i class="fa fa-comments-o fa-lg" style="color: #666"></i> &nbsp; Logout
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable" class="list__item__line-height" onclick="app.slidingMenu.setMainPage('FBprofile.html', {closeMenu: true})">
+            &nbsp;<i class="fa fa-user fa-lg" style="color: #666"></i> &nbsp; Profile
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable" class="list__item__line-height" onclick="app.slidingMenu.setMainPage('my_messages.html', {closeMenu: true})">
+            <i class="fa fa-envelope fa-lg" style="color: #666"></i> &nbsp; Messages
+
+            <span class="list-item-note">
+                    <span class="notification" id="messageNotification"></span>
+            </span>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable" class="list__item__line-height" onclick="comingSoon()">
+            <i class="fa fa-photo fa-lg" style="color: #666"></i> &nbsp; Photos
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable" class="list__item__line-height" onclick="comingSoon()">
+            <i class="fa fa-users fa-lg" style="color: #666"></i> &nbsp; Friends
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable" class="list__item__line-height" onclick="comingSoon()">
+            <i class="fa fa-search-plus fa-lg" style="color: #666"></i> &nbsp; Find Friends
+        </ons-list-item>
+
+        <ons-list-item>
+            <b style="color: #5198db">&nbsp; Account</b>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable" class="list__item__line-height" onclick="comingSoon()">
+            <i class="fa fa-gear fa-lg" style="color: #666"></i> &nbsp; Settings
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable" class="list__item__line-height" onclick="comingSoon()">
+            <i class="fa fa-file-text fa-lg" style="color: #666"></i> &nbsp; Send Feedback
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable" class="list__item__line-height" onclick="comingSoon()">
+            <i class="fa fa-question-circle fa-lg" style="color: #666"></i> &nbsp; HOW TO
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable" class="list__item__line-height" onclick="comingSoon()">
+            <i class="fa fa-info fa-lg" style="color: #666"></i> &nbsp; About
+        </ons-list-item>
+
+        <!-- <ons-list-item modifier="tappable" class="list__item__line-height" onclick="logout();">
+            <i class="fa fa-sign-out fa-lg" style="color: #666"></i> &nbsp; Sign Out
+        </ons-list-item> -->
+
+        <ons-list-item modifier="tappable" class="list__item__line-height" onclick="app.slidingMenu.setMainPage('/', {closeMenu: true})">
+            <i class="fa fa-sign-out fa-lg" style="color: #666"></i> &nbsp; Sign Out
+        </ons-list-item>
+
+    </ons-list>
+
+</ons-page>

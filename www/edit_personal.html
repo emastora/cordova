@@ -1,0 +1,75 @@
+<ons-page id="edit_personal">
+
+    <ons-toolbar>
+        <div class="left">
+            <ons-back-button>Back</ons-back-button>
+        </div>
+        <div class="center">Edit Personal Inf.</div>
+        <div class="right">
+            <ons-button modifier="quiet" onclick="savePersonalInf()">
+                Save
+                <ons-icon icon="fa-save"></ons-icon>
+            </ons-button>
+        </div>
+    </ons-toolbar>
+
+    <ons-list modifier="inset" style="margin-top: 10pt; margin-bottom: 10pt">
+
+        <ons-list-item class="to-wrapper">
+            <ons-row>
+                <ons-col width="90pt">
+                    <img class="to-image" id="user_picture2">
+                </ons-col>
+                <ons-col>
+                    <div class="to-email" id="user_email2"></div>
+                    <div>
+                        <ons-button modifier="quiet" onclick="getPhotoUser();" style="padding: 20px; color: white">
+                            <ons-icon icon="fa fa-camera"></ons-icon>
+                        </ons-button>
+                        <ons-button modifier="quiet" onclick="rotateBase64Image('user_picture2')" style="padding: 20px; color: white">
+                            <ons-icon icon="rotate-right"></ons-icon>
+                        </ons-button>
+                    </div>
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+
+        <ons-list-item>
+            <input type="text" id="name2" class="text-input text-input--transparent" placeholder="First Name" style="width: 100%">
+        </ons-list-item>
+
+        <ons-list-item>
+            <input type="text" id="surname2" class="text-input text-input--transparent" placeholder="Last Name" style="width: 100%">
+        </ons-list-item>
+
+        <!-- <ons-list-item>
+            <input type="text" id="email2" class="text-input text-input--transparent" placeholder="Email" style="width: 100%">
+        </ons-list-item> -->
+
+        <ons-list-item>
+            <input type="text" id="birthDate2" class="text-input text-input--transparent" placeholder="Birth Date" style="width: 100%">
+        </ons-list-item>
+
+        <ons-list-item>
+            <input type="text" id="occupation2" class="text-input text-input--transparent" placeholder="Occupation" style="width: 100%">
+        </ons-list-item>
+
+        <ons-list-item>
+            <textarea id="interests2" class="textarea textarea--transparent" placeholder="Interests" style="width: 100%; height: 100px;"></textarea>
+        </ons-list-item>
+
+        <ons-list-item>
+            <input type="text" id="music2" class="text-input text-input--transparent" placeholder="Music" style="width: 100%">
+        </ons-list-item>
+
+        <ons-list-item>
+            Smoker
+            <label class="switch switch--list-item">
+                <input type="checkbox" id="smoker2" class="switch__input">
+                <div class="switch__toggle"></div>
+            </label>
+        </ons-list-item>
+
+    </ons-list>
+
+</ons-page>

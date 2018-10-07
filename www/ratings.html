@@ -1,0 +1,14 @@
+<ons-navigator var="myNavigator">
+    <ons-page id="my_journeys" ng-device-backbutton="app.slidingMenu.setMainPage('main_map.html')">
+
+        <script>
+            var test = "hide-tabs='true'";
+        </script>
+
+        <ons-tabbar id="journeyTabbar" var="myTabBar">
+            <ons-tab page="ratings_driver.html" icon="fa fa-car fa-lg" label="Driver" active="true"></ons-tab>
+            <ons-tab page="ratings_passenger.html" icon="fa fa-users fa-lg" label="Passenger"></ons-tab>
+            <!-- <ons-tab page="my_journeys_matching.html" icon="fa fa-code-fork fa-lg" label="Matches"></ons-tab> -->
+        </ons-tabbar>
+    </ons-page>
+</ons-navigator>

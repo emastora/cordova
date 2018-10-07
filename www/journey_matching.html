@@ -1,0 +1,79 @@
+<ons-page id="journey_matching">
+
+    <ons-toolbar>
+        <div class="left">
+            <ons-back-button>Back</ons-back-button>
+        </div>
+        <div class="center">Matching Journey</div>
+    </ons-toolbar>
+    
+    <div id="matching_journey_map"></div>
+    
+    <ons-button modifier="large--cta" onClick="sendJourneyRequest()" id = "joinButton">Request Join</ons-button>
+    
+    <ons-list modifier="inset" style="margin-top: 10px; margin-bottom: 10px">
+        <ons-list-header class="person-list-header">Journey Details</ons-list-header>
+            <ons-row>
+                <ons-col width="80px" class="journey-left">
+                    <div class="journey-date" id="dateM"></div>
+                    <div class="journey-date">
+                        <ons-icon icon="fa-clock-o"></ons-icon>
+                        <span id="timeM"></span>
+                    </div>
+                    <div class="journey-time_left" id="timeLeftM"></div>
+                    <div class="journey-seats">
+                        <i class="fa fa-users"></i>
+                        <span id="passengersNoM"></span>
+                    </div>
+                    <div class="journey-seats">
+                        <i class="fa fa-car"></i>
+                        <span id="driverNoM"></span>
+                    </div>
+                </ons-col>
+                
+                <ons-col width="6px" class="journey-center" ng-style="{backgroundColor: &#39;#3399ff&#39;}"></ons-col>
+                
+                <ons-col class="journey-right">
+                    <div class="journey-info">
+                        <ons-icon icon="fa-home"></ons-icon>
+                        <span id="departureAddressM"></span>
+                    </div>
+                    <div class="journey-info">
+                        <ons-icon icon="fa-crosshairs"></ons-icon>
+                        <span id="destinationAddressM"></span>
+                    </div>
+                    <div class="journey-info">
+                        <ons-icon icon="fa-arrows-h"></ons-icon>
+                        <span id="distanceM"></span>
+                    </div>
+                    <div class="journey-info">
+                        <ons-icon icon="fa-clock-o"></ons-icon>
+                        <span id="journeyDurationM"></span>
+                    </div>
+                </ons-col>
+            </ons-row>
+    </ons-list>
+    
+    <ons-list modifier="inset" class="person-list" id="journeys_list_driver_m" style="margin-top: 10px; margin-bottom: 10px">
+        <ons-list-header class="person-list-header">Driver</ons-list-header>
+    </ons-list>
+    
+    <ons-list modifier="inset" class="person-list" id="journeys_list_vehicle_m" style="margin-top: 10px; margin-bottom: 10px">
+        <ons-list-header class="person-list-header">Vehicle</ons-list-header>
+    </ons-list>
+    
+    <ons-list modifier="inset" class="person-list" id="journeys_notes" style="margin-top: 10px; margin-bottom: 10px">
+        <ons-list-header class="person-list-header">Notes</ons-list-header>
+        
+        <ons-list-item class="person" modifier="inset">
+            <ons-row>
+                <ons-col><textarea class="textarea textarea" style="width: 100%; height: 100px; margin-bottom: 10px" id="notesM" readonly></textarea><ons-col>
+            </ons-row>
+        </ons-list-item>
+    </ons-list>
+    
+    <ons-list modifier="inset" class="person-list" id="journeys_list_accepted_m" style="margin-top: 10px; margin-bottom: 10px">
+        <ons-list-header class="person-list-header">Accepted Passengers</ons-list-header>
+    </ons-list>
+    
+</ons-page>

@@ -1,0 +1,41 @@
+<ons-navigator var="myNavigator">
+    <ons-page id="FBprofile" ng-device-backbutton="app.slidingMenu.setMainPage('main_map.html')">
+
+        <ons-toolbar>
+            <div class="left">
+                <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()">
+                    <ons-icon icon="bars"></ons-icon>
+                </ons-toolbar-button>
+            </div>
+            <div class="center">Facebook Profile
+            </div>
+
+            <!-- <div class="right">
+                    <ons-button modifier="quiet" onclick="myNavigator.pushPage(&#39;edit_personal.html&#39;, { animation : &#39;slide&#39; } );">
+                        Edit
+                        <ons-icon icon="fa-edit"></ons-icon>
+                    </ons-button>
+                </div> -->
+
+            <!-- <div class="container">
+                <div id="profileFB">
+                </div>
+                <div id="feed"></div>
+            </div> -->
+        </ons-toolbar>
+        <ons-list modifier="inset" style="margin-top: 10px; margin-bottom: 10px">
+
+            <!-- <ons-list-item>
+                <div class="align-left">Profile:</div>
+                <div class="align-right" id="profileFB2"></div>
+            </ons-list-item> -->
+
+            <div class="container">
+                <div id="profileFB">
+                </div>
+                <div id="feed"></div>
+            </div>
+
+        </ons-list>
+    </ons-page>
+</ons-navigator>

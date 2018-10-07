@@ -1,0 +1,90 @@
+<ons-page id="new_vehicle">
+    <ons-toolbar>
+        <div class="left">
+            <ons-back-button>Back</ons-back-button>
+        </div>
+        <div class="center">New Vehicle Information</div>
+        
+        <div class="right">
+            <ons-button modifier="quiet" onclick="saveVehicleInf()">
+                Save <ons-icon icon="fa-save"></ons-icon>
+            </ons-button>
+        </div>
+    </ons-toolbar>
+    
+    <ons-list modifier="inset" style="margin-top: 10px; margin-bottom: 10px">
+    
+        <ons-list-item class="to-wrapper">
+            <ons-row>
+                <ons-col width="90pt">
+                    <img class="to-image" id="vehicle_picture">
+                </ons-col>
+                <ons-col>
+                    <div class="to-email" id="vehicle_email"></div>
+                    <div>
+                        <ons-button modifier="quiet" onclick="getPhotoVehicle();" style="padding: 20px; color: white">
+                            <ons-icon icon="fa fa-camera"></ons-icon>
+                        </ons-button>
+                        <ons-button modifier="quiet" onclick="rotateBase64Image('vehicle_picture')" style="padding: 20px; color: white">
+                            <ons-icon icon="rotate-right"></ons-icon>
+                        </ons-button>
+                    </div>
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+    
+        <ons-list-item>
+          <input type="text" id="brand" class="text-input text-input--transparent" placeholder="Brand" style="width: 100%">
+        </ons-list-item>
+        
+        <ons-list-item>
+          <input type="text" id="model" class="text-input text-input--transparent" placeholder="Model" style="width: 100%">
+        </ons-list-item>
+        
+        <ons-list-item>
+          <input type="text" id="seats" class="text-input text-input--transparent" placeholder="Seats" style="width: 100%">
+        </ons-list-item>
+
+        <ons-list-item>
+          <input type="text" id="color" class="text-input text-input--transparent" placeholder="Color" style="width: 100%">
+        </ons-list-item>
+        
+        <ons-list-item>
+          <input type="text" id="licencePlate" class="text-input text-input--transparent" placeholder="License Plate" style="width: 100%">
+        </ons-list-item>
+        
+        <ons-list-item>
+          <input type="text" id="year" class="text-input text-input--transparent" placeholder="Year" style="width: 100%">
+        </ons-list-item>
+                    
+        <ons-list-item>
+          <input type="text" id="cc" class="text-input text-input--transparent" placeholder="CC" style="width: 100%">
+        </ons-list-item>
+        
+        <ons-list-item>
+            Air Condition
+            <label class="switch switch--list-item">
+                <input type="checkbox" id="aircondition" class="switch__input">
+                <div class="switch__toggle"></div>
+            </label>
+        </ons-list-item>
+        
+        <ons-list-item>
+            Pets Allowed
+            <label class="switch switch--list-item">
+                <input type="checkbox" id="petsAllowed" class="switch__input">
+                <div class="switch__toggle"></div>
+            </label>
+        </ons-list-item>
+    
+    </ons-list>
+    
+    <input type="hidden" id="vechicle_oid" value="aaaaaaaaaaaaaaaaaaaaaaaa" />
+    
+    <!--<div style="padding: 10px 9px">
+        <ons-button modifier="large" style="margin: 0 auto;" onClick="saveVehicleInf()">
+            Save
+        </ons-button>
+    </div> -->
+    
+</ons-page>

@@ -1,0 +1,68 @@
+<ons-page id="others_personal_inf_message">
+
+    <ons-toolbar>
+        <div class="left">
+            <ons-back-button>Back</ons-back-button>
+        </div>
+        <div class="center">Personal Information</div>
+    </ons-toolbar>
+
+    <ons-list modifier="inset" style="margin-top: 10px; margin-bottom: 10px">
+    
+        <ons-list-item class="to-wrapper">
+            <ons-row>
+                <ons-col width="90pt">
+                    <img class="to-image" id="user_picture" >
+                </ons-col>
+                <ons-col>
+                    <div class="to-email" id="user_email"></div>
+                    <div class="to-vehicle" id="userVehicle"></div>
+                    <div class="rating-num" id="rating"></div>
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+        
+        <ons-list-item>
+            <div class="align-left">First Name:</div>
+            <div class="align-right" id="name"></div>
+        </ons-list-item>
+
+        <ons-list-item>
+            <div class="align-left">Last Name:</div>
+            <div class="align-right" id="surname"></div>
+        </ons-list-item>
+        
+        <ons-list-item>
+            <div class="align-left">Birth Date:</div>
+            <div class="align-right" id="birthDate"></div>
+        </ons-list-item>
+        
+        <ons-list-item>
+            <div class="align-left">Occupation:</div>
+            <div class="align-right" id="occupation"></div>
+        </ons-list-item>
+        
+        <ons-list-item>
+            Interests
+            <textarea class="textarea textarea" style="width: 100%; height: 100px; margin-bottom: 10px" id="interests" readonly ></textarea>
+        </ons-list-item>
+        
+        <ons-list-item>
+            <div class="align-left">Music:</div>
+            <div class="align-right" id="music"></div>
+        </ons-list-item>
+        
+        <ons-list-item>
+            <div class="align-left">Smoker:</div>
+            <div class="align-right" id="smoker"></div>
+        </ons-list-item>
+    
+    </ons-list>
+    
+    <!--<div style="padding: 10px 9px">
+        <ons-button modifier="large" style="margin: 0 auto;" onclick="app.slidingMenu.setMainPage('edit_personal.html', {closeMenu: true})">
+            Edit Personal Info
+        </ons-button>
+    </div>-->
+    
+</ons-page>

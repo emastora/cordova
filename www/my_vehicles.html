@@ -1,0 +1,18 @@
+<ons-navigator var="myNavigator">
+   <ons-page id="my_vehicles" ng-device-backbutton="app.slidingMenu.setMainPage('main_map.html')">
+        <ons-toolbar>
+            <div class="left">
+                <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+            </div>
+            <div class="center">My Vehicles</div>
+            <div class="right">
+                <ons-button modifier="quiet" onclick="myNavigator.pushPage(&#39;new_vehicle.html&#39;, { animation : &#39;slide&#39; } ); vehicleSelected('aaaaaaaaaaaaaaaaaaaaaaaa');">
+                    New <ons-icon icon="fa-plus-circle "></ons-icon>
+                </ons-button>
+            </div>
+        </ons-toolbar>
+
+        <ons-list id="vehicles_list"></ons-list>
+        
+    </ons-page>
+</ons-navigator>
